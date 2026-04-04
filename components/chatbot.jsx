@@ -7,7 +7,7 @@ import { MessageSquare, X, Send, Bot, User, Smile } from "lucide-react"
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState([
-    { text: "Hi there! I'm Arnav's virtual assistant. How can I help you today?", sender: "bot" },
+    { text: "Hi there! I'm Ishan's virtual assistant. How can I help you today?", sender: "bot" },
   ])
   const [input, setInput] = useState("")
   const [isTyping, setIsTyping] = useState(false)
@@ -56,31 +56,31 @@ export default function Chatbot() {
       let botResponse = ""
 
       if (userMessage.includes("hello") || userMessage.includes("hi") || userMessage.includes("hey")) {
-        botResponse = "Hello! How can I assist you with Arnav's portfolio today?"
+        botResponse = "Hello! How can I assist you with Ishan's portfolio today?"
       } else if (userMessage.includes("project") || userMessage.includes("work")) {
         botResponse =
-          "Arnav has worked on several exciting projects including web applications, AI solutions, and mobile apps. You can check them out in the Projects section!"
+          "Ishan has worked on several exciting projects including web applications, AI solutions, and mobile apps. You can check them out in the Projects section!"
       } else if (userMessage.includes("contact") || userMessage.includes("hire") || userMessage.includes("email")) {
         botResponse =
-          "You can contact Arnav through the Contact form on this page, or directly via email at arnavjoshi0512@gmail.com"
+          "You can contact Ishan through the Contact form on this page, or directly via email at ishan.girgaonkar07@gmail.com"
       } else if (userMessage.includes("experience") || userMessage.includes("background")) {
         botResponse =
-          "Arnav has experience in full-stack development, machine learning, and UI/UX design. Check out the Experience section for more details!"
+          "Ishan has experience in full-stack development, machine learning, and DevOps. Check out the Experience section for more details!"
       } else if (
         userMessage.includes("skill") ||
         userMessage.includes("technology") ||
         userMessage.includes("tech stack")
       ) {
         botResponse =
-          "Arnav is proficient in JavaScript, Python, React, Next.js, Node.js, and various ML frameworks. The Skills section has a complete breakdown!"
+          "Ishan is proficient in Java, Python, React, Node.js, and various ML frameworks. The Skills section has a complete breakdown!"
       } else if (userMessage.includes("education") || userMessage.includes("study") || userMessage.includes("degree")) {
         botResponse =
-          "Arnav has a strong educational background in Computer Science with a focus on AI and web technologies."
+          "Ishan has a strong educational background in Computer Engineering with a focus on AI and web technologies."
       } else if (userMessage.includes("thank")) {
         botResponse = "You're welcome! Feel free to ask if you have any other questions."
       } else {
         botResponse =
-          "That's an interesting question! Arnav would be happy to discuss this further. Would you like to reach out to him directly through the contact form?"
+          "That's an interesting question! Ishan would be happy to discuss this further. Would you like to reach out to him directly through the contact form?"
       }
 
       setMessages((prev) => [...prev, { text: botResponse, sender: "bot" }])
@@ -117,7 +117,7 @@ export default function Chatbot() {
                   <Bot size={18} className="text-white dark:text-gray-900" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-sm">Arnav's Assistant</h3>
+                  <h3 className="font-semibold text-sm">Ishan's Assistant</h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400">Always here to help</p>
                 </div>
               </div>

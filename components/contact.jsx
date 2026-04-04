@@ -36,12 +36,12 @@ export default function Contact() {
     setIsSubmitting(true);
   
     const formUrl =
-      "https://docs.google.com/forms/d/e/1FAIpQLSf-Ftv4Mt3YX9puPlulHwhIgo-w8dqf69dDbR5NDP6wDkv5Hg/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSe8eIHBOm2oCieBCQm3tJKwn8l6Z3OjyhCmkL8gN1WVBimBIw/formResponse";
   
     const formData = new FormData();
-    formData.append("entry.578838710", formState.name); // Name
-    formData.append("entry.811746656", formState.email); // Email
-    formData.append("entry.1900870639", formState.message); // Message
+    formData.append("entry.1410985358", formState.name); // Name
+    formData.append("entry.2104227957", formState.email); // Email
+    formData.append("entry.1724372761", formState.message); // Message
     console.log(formState.name, formState.email, formState.message);
   
     fetch(formUrl, {
@@ -86,31 +86,31 @@ export default function Contact() {
     {
       name: "Email",
       icon: <Mail className="w-5 h-5" />,
-      href: "mailto:arnavjoshi0512@gmail.com",
-      label: "arnavjoshi0512@gmail.com",
+      href: "mailto:ishan.girgaonkar07@gmail.com",
+      label: "ishan.girgaonkar07@gmail.com",
     },
     {
       name: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      href: "https://github.com/arnvjshi",
-      label: "github.com/arnvjshi",
+      href: "https://github.com/ishang1199",
+      label: "github.com/ishang1199",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      href: "https://linkedin.com/in/arnav-joshi-aj05",
-      label: "linkedin.com/in/arnav-joshi-aj05",
+      href: "https://www.linkedin.com/in/ishan-girgaonkar/",
+      label: "linkedin.com/in/ishan-girgaonkar",
     },
     {
       name: "Instagram",
       icon: <Instagram className="w-5 h-5" />,
-      href: "https://instagram.com/arnv_jshi",
-      label: "instagram.com/arnv_jshi",
+      href: "https://www.instagram.com/ishaaan99/",
+      label: "instagram.com/ishaaan99",
     },
     {
       name: "Resume",
       icon: <StickyNote className="w-5 h-5" />,
-      href: "https://raw.githubusercontent.com/arnvjshi/arnvjshi/main/Resume.pdf",
+      href: "/Resume.pdf",
       label: "Download Resume",
     }
     

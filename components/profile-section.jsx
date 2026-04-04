@@ -21,8 +21,7 @@ export default function ProfileSection() {
         className="flex flex-col items-center gap-8 max-w-4xl mx-auto"
       >
         <div className="relative w-40 h-40 md:w-48 md:h-48 overflow-hidden rounded-full neumorphic-profile shadow-2xl">
-          <img src="/arnav.png?height=200&width=200" alt="Arnav Joshi" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/20 dark:to-white/10"></div>
+        <img src="/ishan.png" alt="Ishan" className="w-full h-full object-cover" />          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/20 dark:to-white/10"></div>
         </div>
 
         <div className="flex flex-col items-center">
@@ -40,8 +39,8 @@ export default function ProfileSection() {
               </span>
             </div>*/}
             <p className="text-base md:text-lg max-w-xl text-center text-white dark:text-white">
-              I'm a passionate developer with expertise in modern web technologies and AI solutions. I create intuitive,
-              responsive applications that solve real-world problems with clean, efficient code and thoughtful design.
+              I'm a Full-Stack Developer focused on building scalable web applications, automation pipelines, and AI-powered solutions. 
+              I enjoy creating clean, responsive products that solve real-world problems through thoughtful engineering.
             </p>
           </motion.div>
         </div>

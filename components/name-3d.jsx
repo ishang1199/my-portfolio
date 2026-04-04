@@ -17,7 +17,7 @@ export default function Name3D() {
           repeat: Number.POSITIVE_INFINITY,
         }}
       >
-        ARNAV JOSHI
+        Ishan Girgaonkar
       </motion.h1>
     </div>
   )

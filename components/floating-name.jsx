@@ -47,7 +47,7 @@ export default function FloatingName() {
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-3d"
           animate={floatingAnimation}
         >
-          ARNAV JOSHI
+          ISHAN GIRGAONKAR
         </motion.h1>
       </motion.div>
     </div>

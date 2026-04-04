@@ -28,12 +28,10 @@ export default function Home() {
   const mainRef = useRef(null)
   const { theme } = useTheme()
 
-  // Parallax effect for hero section
   const y = useTransform(scrollYProgress, [0, 0.5], [0, -150])
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0])
 
   useEffect(() => {
-    // Loading screen
     const timer = setTimeout(() => {
       setLoading(false)
     }, 2500)
@@ -43,7 +41,6 @@ export default function Home() {
 
   useEffect(() => {
     if (!loading) {
-      // GSAP animations for sections
       const sections = document.querySelectorAll("section")
 
       sections.forEach((section) => {
@@ -64,7 +61,6 @@ export default function Home() {
         )
       })
 
-      // Animate the progress bar
       gsap.to(".progress-bar", {
         scaleX: 1,
         duration: 1.5,
@@ -79,20 +75,18 @@ export default function Home() {
 
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
-      <title>Arnav Joshi</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      <title>Ishan | Portfolio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <div className="relative min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 text-black dark:text-white overflow-hidden">
         <CustomCursor />
         <Navbar />
 
-        {/* Progress bar */}
         <motion.div
           className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 dark:from-gray-700 dark:via-gray-300 dark:to-gray-700 z-50"
           style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
         />
 
         <main ref={mainRef} className="relative z-10">
-          {/* Hero Section */}
           <section id="home" className="min-h-screen relative">
             <VantaBackground>
               <div className="flex items-center justify-center min-h-screen px-4 relative z-10">
@@ -111,10 +105,10 @@ export default function Home() {
                     <div className="h-8 mb-4">
                       <TypewriterEffect
                         words={[
-                          "I'm a Web Developer",
-                          "I'm an ML Enthusiast",
-                          "I'm a Full-Stack Engineer",
-                          "I'm a UI/UX Designer",
+                          "I'm a Full-Stack Developer",
+                          "I'm a DevOps Engineer",
+                          "I'm an AI/ML Builder",
+                          "I'm a Software Engineer",
                           "I'm a Problem Solver",
                         ]}
                         speed={80}
@@ -129,48 +123,32 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 1.3 }}
                     className="flex flex-wrap gap-4 justify-center mt-8"
                   >
-                    <motion.button
+                    <motion.a
+                      href="#projects"
                       className="neumorphic-btn-3d px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       View Projects
-                    </motion.button>
-                    <motion.button
+                    </motion.a>
+
+                    <motion.a
+                      href="#contact"
                       className="glassmorphic-btn-advanced px-6 py-3 rounded-lg font-medium"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       Contact Me
-                    </motion.button>
+                    </motion.a>
                   </motion.div>
                 </motion.div>
               </div>
-                      <br></br>
-                      <br></br>
-              {/*<motion.div
-                className="absolute bottom-10 left-3 transform -translate-x-1/2 flex flex-col items-center z-10"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 2, duration: 1 }}
-              >
-                <p className="text-sm text-gray-400 dark:text-gray-600 align-left">Scroll down to explore</p>
-                <motion.div
-                  className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center "
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
-                >
-                  <motion.div
-                    className="w-1 h-2 bg-gray-400 dark:bg-gray-600 rounded-full mt-2"
-                    animate={{ y: [0, 15, 0] }}
-                    transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
-                  />
-                </motion.div>
-              </motion.div>*/}
+
+              <br />
+              <br />
             </VantaBackground>
           </section>
 
-          {/* Add brush strokes to the body sections */}
           <div className="relative">
             <BrushStrokes />
             <div className="container mx-auto px-4">
@@ -182,9 +160,9 @@ export default function Home() {
             </div>
           </div>
         </main>
+
         <Chatbot />
       </div>
     </ThemeProvider>
   )
 }
-

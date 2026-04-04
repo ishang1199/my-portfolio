@@ -72,7 +72,7 @@ export default function About() {
 
           <div ref={textRef} className="space-y-6">
             <p className="text-lg leading-relaxed">
-              I'm <span className="font-semibold">Arnav Joshi</span>, a passionate full-stack developer with a deep
+              I'm <span className="font-semibold">Ishan Girgaonkar</span>, a passionate full-stack developer with a deep
               interest in creating innovative solutions that combine cutting-edge technology with elegant design. My
               journey in software development began with a curiosity about how digital experiences are crafted, and has
               evolved into a professional pursuit of excellence in web development, AI integration, and user experience
@@ -80,15 +80,15 @@ export default function About() {
             </p>
 
             <p className="text-lg leading-relaxed">
-              With expertise in <span className="font-semibold">JavaScript, Python</span>, and various modern frameworks
+              With expertise in <span className="font-semibold">Java, Python</span>, and various modern frameworks
               like <span className="font-semibold">Next.js and React</span>, I build applications that are not only
               functional but also intuitive and engaging. I believe that great software should be both powerful and
               accessible, solving real problems while providing a seamless user experience.
             </p>
 
             <p className="text-lg leading-relaxed">
-              When I'm not coding, you can find me participating in hackathons, contributing to open-source projects, or
-              exploring new technologies that push the boundaries of what's possible in software development.
+              When I'm not coding, you can find me playing EA FC, listening music, or
+              exploring new hikes that push my physical boundaries.
             </p>
           </div>
 

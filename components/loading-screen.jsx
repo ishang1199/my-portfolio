@@ -38,7 +38,7 @@ export default function LoadingScreen() {
       className="fixed inset-0 bg-white dark:bg-black flex flex-col items-center justify-center z-50"
     >
       <motion.div variants={logoVariants} initial="initial" animate="animate" className="mb-8">
-        <h1 className="text-4xl md:text-6xl font-bold">AJ</h1>
+        <h1 className="text-4xl md:text-6xl font-bold">IG</h1>
       </motion.div>
 
       <div className="w-64 h-2 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">

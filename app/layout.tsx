@@ -1,64 +1,63 @@
-import type { Metadata, Viewport } from 'next'
-import './globals.css'
-import { Analytics } from "@vercel/analytics/react";
+import type { Metadata, Viewport } from "next"
+import "./globals.css"
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
-  title: "Arnav Joshi | Full Stack Developer & Tech Enthusiast",
-  description: "Portfolio of Arnav Joshi - Full Stack Developer skilled in Next.js, MongoDB, AWS, and Web3. Passionate about competitive coding and building innovative applications.",
+  title: "Ishan | Full Stack Developer",
+  description:
+    "Portfolio of Ishan - Full Stack Developer focused on web development, DevOps, and AI/ML projects. Explore my projects, skills, experience, and contact information.",
   keywords: [
-    "Arnav Joshi", 
-    "Full Stack Developer", 
-    "Software Engineer", 
-    "Next.js Developer", 
-    "MongoDB", 
-    "AWS Developer", 
-    "Web3", 
-    "Competitive Programming", 
-    "Blockchain", 
-    "Cloud Computing", 
-    "Shri Ramdeobaba College of Engineering", 
-    "RCOEM", 
-    "Ramdeobaba University", 
-    "RBU",
-    "Nagpur"
+    "Ishan",
+    "Full Stack Developer",
+    "Software Engineer",
+    "DevOps Engineer",
+    "AI ML Engineer",
+    "Portfolio",
+    "Next.js Developer",
+    "React Developer",
+    "Cloud Computing",
+    "Web Development",
+    "Machine Learning",
+    "GitHub Portfolio",
   ],
-  generator: "arnavjoshi.vercel.app",
+  generator: "ishang1199.github.io",
   openGraph: {
-    title: "Arnav Joshi | Full Stack Developer & Tech Enthusiast",
-    description: "Explore Arnav Joshi's portfolio showcasing expertise in Next.js, MongoDB, AWS, and Web3 development.",
-    url: "https://arnavjoshi.vercel.app",
-    siteName: "Arnav Joshi Portfolio",
+    title: "Ishan | Full Stack Developer",
+    description:
+      "Explore Ishan's portfolio showcasing full stack, DevOps, and AI/ML projects.",
+    url: "https://ishang1199.github.io",
+    siteName: "Ishan Portfolio",
     images: [
       {
-        url: "/arnav.png",
+        url: "/ishan.png",
         width: 1200,
         height: 630,
-        alt: "Arnav Joshi Portfolio Preview",
+        alt: "Ishan Portfolio Preview",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arnav Joshi | Full Stack Developer & Tech Enthusiast",
-    description: "Portfolio of Arnav Joshi - Full Stack Developer with expertise in Next.js, MongoDB, AWS, and Web3.",
-    images: ["/arnav.png"],
+    title: "Ishan | Full Stack Developer",
+    description:
+      "Portfolio of Ishan - Full Stack Developer focused on software engineering, DevOps, and AI/ML.",
+    images: ["/ishan.png"],
   },
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://arnavjoshi.vercel.app"),
+  metadataBase: new URL("https://ishang1199.github.io"),
   alternates: {
-    canonical: "https://arnavjoshi.vercel.app",
+    canonical: "https://ishang1199.github.io",
   },
-  authors: [{ name: "Arnav Joshi", url: "https://arnavjoshi.vercel.app" }],
-  publisher: "Arnav Joshi",
-};
-
+  authors: [{ name: "Ishan", url: "https://ishang1199.github.io" }],
+  publisher: "Ishan",
+}
 
 export const viewport: Viewport = {
   viewportFit: "cover",
-};
+}
 
 export default function RootLayout({
   children,
@@ -67,8 +66,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Analytics/>
-      <body>{children}</body>
+      <body>
+        <Analytics />
+        {children}
+      </body>
     </html>
   )
 }

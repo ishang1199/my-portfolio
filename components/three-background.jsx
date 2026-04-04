@@ -151,7 +151,7 @@ function Scene({ isIntro, isDarkMode }) {
       <Environment preset="city" />
 
       <AnimatedText
-        text="ARNAV JOSHI"
+        text="ISHAN GIRGAONKAR"
         position={textPosition}
         scale={textScale}
         color={isDarkMode ? "#ffffff" : "#000000"}
