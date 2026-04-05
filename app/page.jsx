@@ -87,11 +87,11 @@ export default function Home() {
         />
 
         <main ref={mainRef} className="relative z-10">
-          <section id="home" className="min-h-screen relative">
+          <section id="home" className="relative min-h-screen flex items-center">
             <VantaBackground>
-              <div className="flex items-center justify-center min-h-screen px-4 relative z-10">
+              <div className="flex items-center justify-center w-full min-h-screen px-4 py-24 md:py-16 relative z-10">
                 <motion.div
-                  className="text-center w-full max-w-5xl mx-auto bg-black/10 dark:bg-white/5 backdrop-blur-sm p-8 rounded-xl"
+                  className="text-center w-full max-w-4xl mx-auto bg-black/20 dark:bg-white/5 backdrop-blur-md px-6 py-8 md:px-10 md:py-10 rounded-2xl"
                   style={{ y, opacity }}
                 >
                   <ProfileSection />
@@ -100,9 +100,9 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 1 }}
-                    className="flex flex-col items-center justify-center mt-8"
+                    className="flex flex-col items-center justify-center mt-6 md:mt-8"
                   >
-                    <div className="h-8 mb-4">
+                    <div className="h-10 mb-2 md:mb-4">
                       <TypewriterEffect
                         words={[
                           "I'm a Full-Stack Developer",
@@ -121,7 +121,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1.3 }}
-                    className="flex flex-wrap gap-4 justify-center mt-8"
+                    className="flex flex-wrap gap-4 justify-center mt-6"
                   >
                     <motion.a
                       href="#projects"
@@ -144,8 +144,7 @@ export default function Home() {
                 </motion.div>
               </div>
 
-              <br />
-              <br />
+              
             </VantaBackground>
           </section>
 

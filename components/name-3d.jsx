@@ -3,12 +3,12 @@ import { motion } from "framer-motion"
 
 export default function Name3D() {
   return (
-    <div className="w-full py-6">
+    <div className="w-full py-4 md:py-6">
       <motion.h1
-        className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-3d text-center"
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-3d text-center leading-tight"
         animate={{
-          y: [0, -10, 0],
-          rotateZ: [0, 1, 0],
+          y: [0, -6, 0],
+          rotateZ: [0, 0.5, 0],
         }}
         transition={{
           duration: 4,
@@ -22,4 +22,3 @@ export default function Name3D() {
     </div>
   )
 }
-
