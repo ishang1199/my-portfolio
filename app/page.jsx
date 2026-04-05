@@ -41,7 +41,7 @@ export default function Home() {
 
   useEffect(() => {
     if (!loading) {
-      const sections = document.querySelectorAll("section")
+      const sections = document.querySelectorAll("section:not(#home)")
 
       sections.forEach((section) => {
         gsap.fromTo(
