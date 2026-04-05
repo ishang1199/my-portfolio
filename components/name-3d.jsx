@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 
 export default function Name3D() {
   return (
-    <div className="w-full py-4 md:py-6">
+    <div className="w-full py-4">
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-3d text-center leading-tight"
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-3d text-center"
         animate={{
           y: [0, -6, 0],
           rotateZ: [0, 0.5, 0],

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll } from "framer-motion"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useTheme } from "next-themes"
@@ -27,9 +27,6 @@ export default function Home() {
   const { scrollYProgress } = useScroll()
   const mainRef = useRef(null)
   const { theme } = useTheme()
-
-  const y = useTransform(scrollYProgress, [0, 0.5], [0, -150])
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0])
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -77,22 +74,25 @@ export default function Home() {
     <ThemeProvider defaultTheme="dark" attribute="class">
       <title>Ishan | Portfolio</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       <div className="relative min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-black dark:to-gray-900 text-black dark:text-white overflow-hidden">
         <CustomCursor />
         <Navbar />
 
         <motion.div
-          className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 dark:from-gray-700 dark:via-gray-300 dark:to-gray-700 z-50"
+          className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-500 via-gray-300 to-gray-500 dark:from-gray-700 dark:via-gray-300 dark:to-gray-700 z-50 progress-bar"
           style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
         />
 
         <main ref={mainRef} className="relative z-10">
-          <section id="home" className="relative min-h-screen flex items-center">
+          <section id="home" className="min-h-screen relative">
             <VantaBackground>
-              <div className="flex items-center justify-center w-full min-h-screen px-4 py-24 md:py-16 relative z-10">
+              <div className="flex items-center justify-center min-h-screen px-4 relative z-10">
                 <motion.div
-                  className="text-center w-full max-w-4xl mx-auto bg-black/20 dark:bg-white/5 backdrop-blur-md px-6 py-8 md:px-10 md:py-10 rounded-2xl"
-                  style={{ y, opacity }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="text-center w-full max-w-5xl mx-auto bg-black/10 dark:bg-white/5 backdrop-blur-sm p-8 rounded-xl"
                 >
                   <ProfileSection />
 
@@ -100,9 +100,9 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 1 }}
-                    className="flex flex-col items-center justify-center mt-6 md:mt-8"
+                    className="flex flex-col items-center justify-center mt-6"
                   >
-                    <div className="h-10 mb-2 md:mb-4">
+                    <div className="h-8 mb-4">
                       <TypewriterEffect
                         words={[
                           "I'm a Full-Stack Developer",
@@ -121,7 +121,7 @@ export default function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1.3 }}
-                    className="flex flex-wrap gap-4 justify-center mt-6"
+                    className="flex flex-wrap gap-4 justify-center mt-8"
                   >
                     <motion.a
                       href="#projects"
@@ -143,8 +143,6 @@ export default function Home() {
                   </motion.div>
                 </motion.div>
               </div>
-
-              
             </VantaBackground>
           </section>
 
