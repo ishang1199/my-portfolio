@@ -20,9 +20,13 @@ export default function ProfileSection() {
         transition={{ duration: 1, delay: 0.5 }}
         className="flex flex-col items-center gap-8 max-w-4xl mx-auto"
       >
-        <div className="relative w-40 h-40 md:w-48 md:h-48 overflow-hidden rounded-full neumorphic-profile shadow-2xl">
-        <img src="/ishan.png" alt="Ishan" className="w-full h-full object-cover" />          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/20 dark:to-white/10"></div>
-        </div>
+        <div className="relative w-40 h-40 md:w-48 md:h-48 overflow-hidden rounded-full bg-transparent shadow-none transition-transform duration-300 hover:scale-105">
+  <img
+    src="/ishan.png"
+    alt="Ishan"
+    className="w-full h-full rounded-full border border-white/20 object-cover object-[center_20%]"
+  />
+</div>
 
         <div className="flex flex-col items-center">
           <Name3D />

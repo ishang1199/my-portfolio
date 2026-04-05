@@ -9,31 +9,39 @@ export default function Experience() {
   const isInView = useInView(sectionRef, { once: false, amount: 0.1 })
 
   const experiences = [
-    {
-      title: "Rotaract Club",
-      role: "Technical Co-ordinator",
-      period: "2024 - Present",
-      description:
-        "Led the technical team in developing and maintaining the club's website and digital presence. Organized technical workshops and events for members.",
-      icon: <Users className="w-6 h-6" />,
-    },
-    {
-      title: "CompEx",
-      role: "Event Organizer and Tech Intern",
-      period: "2025",
-      description:
-        "Coordinated and managed technical competitions and hackathons. Developed judging systems and participant management platforms.",
-      icon: <Calendar className="w-6 h-6" />,
-    },
-    {
-      title: "Colosseum 15.0",
-      role: "Technical Coordinator",
-      period: "2025",
-      description:
-        "Managed the technical aspects of the annual tech fest. Developed registration systems and coordinated with sponsors for technical workshops.",
-      icon: <Award className="w-6 h-6" />,
-    },
-  ]
+  {
+    title: "Computer Architecture Lab, SJSU",
+    role: "Research Assistant",
+    period: "2025",
+    description:
+      "Deployed the Vortex RISC-V GPGPU on Intel FPGA by modifying and optimizing build scripts. Enabled successful execution of GPU kernels on hardware. Created detailed Markdown-based deployment and debugging guides to streamline development workflows and improve team productivity.",
+    icon: <Users className="w-6 h-6" />,
+  },
+  {
+    title: "Vishwakarma Institute of Technology, Pune",
+    role: "Computer Engineering Honors Student",
+    period: "2018-2021",
+    description:
+      "Completed the Computer Engineering Honors program with a strong focus on Data Structures, Object-Oriented Programming, DBMS, and Web Technologies. Achieved a CGPA of 8.0, demonstrating strong academic performance and a solid foundation in software engineering principles.",
+    icon: <Award className="w-6 h-6" />,
+  },
+  {
+    title: "Social Welfare & Development Committee",
+    role: "Branding Head",
+    period: "2020 - 2021",
+    description:
+      "Led the multimedia and social media team to maintain and enhance the club’s digital presence. Played a key role in planning and executing events. Coordinated cross-functional efforts to improve outreach and engagement.",
+    icon: <Calendar className="w-6 h-6" />,
+  },
+  {
+    title: "The Robotics Forum (TRF)",
+    role: "Volunteer",
+    period: "2020-2021",
+    description:
+      "Completed a structured training program covering robotics fundamentals including electronics, sensors, and control systems. Collaborated on hands-on projects with cross-functional teams.",
+    icon: <Users className="w-6 h-6" />,
+  },
+]
 
   const containerVariants = {
     hidden: { opacity: 0 },

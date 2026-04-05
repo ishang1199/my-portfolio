@@ -10,57 +10,16 @@ export default function Projects() {
   const [activeProject, setActiveProject] = useState(0)
 
   const projects = [
-    {
-      title: "Smart Shopping System",
-      description: "An intelligent e-commerce platform with personalized recommendations and inventory management.",
-      technologies: ["Next.js", "MongoDB", "AWS Lambda"],
-      image: "/smart-shop.png?height=400&width=600",
-      github: "https://github.com/arnvjshi/Smart-Shop",
-      demo: "https://smart-shopping-ss.vercel.app/",
-    },
-    {
-      title: "Top-Down Retro Game",
-      description: "A nostalgic 2D game with pixel art graphics and classic gameplay mechanics.",
-      technologies: ["JavaScript", "Tiled", "PNG Assets"],
-      image: "/iq.png?height=400&width=600",
-      github: "https://github.com/arnvjshi/MiniGames-colosseum",
-      demo: "https://arnvjshi.github.io/MiniGames-colosseum/",
-    },
-    {
-      title: "Flask AI Chatbot",
-      description: "An AI-powered chatbot built with Flask and Hugging Face's transformer models.",
-      technologies: ["Flask", "Python", "Hugging Face"],
-      image: "/chat-bot.png?height=400&width=600",
-      github: "https://github.com/arnvjshi/Flask-AI-Chatbot",
-      demo: "#",
-    },
-    {
-      title: "Blockchain-Based Transaction System",
-      description: "A secure and transparent platform for managing digital transactions using blockchain technology.",
-      technologies: ["React", "Solidity", "Web3.js"],
-      image: "/block-chain.png?height=400&width=600",
-      github: "https://github.com/arnvjshi/BlockChain-Transaction-System",
-      demo: "#",
-    },
-    {
-      title: "CyberLab",
-      description:
-        'A software to book and manage lab appointments, track equipment usage, and generate reports for research labs.',
-      technologies: ["Next.js", "MongoDB", "AWS Lambda"],
-      image: "/cyber-lab.png?height=400&width=600",
-      github: "https://github.com/arnvjshi/CyberLab",
-      demo: "https://cyber-lab.vercel.app/",
-    },
-    {
-    title: "Other Projects",
-      description:
-        'You can view more of my projects on my GitHub profile.',
-      technologies: ["React", "Next.js", "Node.js, etc."],
-      image: "/github.png?height=400&width=600",
-      github: "https://github.com/arnvjshi/",
-      demo: "https://github.com/arnvjshi/",
-    },
-  ]
+  {
+    title: "Linguofy.AI",
+    description:
+      "An AI-powered language learning and communication platform focused on making multilingual interaction more accessible through intelligent features and a clean user experience.",
+    technologies: ["React Native", "Expo", "Firebase", "Gemini AI"],
+    image: "/linguofy.png",
+    github: "https://github.com/ishang1199/linguofy.AI",
+    demo: "https://github.com/ishang1199/linguofy.AI",
+  },
+]
 
   const nextProject = () => {
     setActiveProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1))

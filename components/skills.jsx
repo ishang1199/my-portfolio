@@ -9,43 +9,57 @@ export default function Skills() {
   const [hoveredSkill, setHoveredSkill] = useState(null)
 
   const skillCategories = [
-    {
-      title: "Languages",
-      skills: [
-        { name: "JavaScript", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "C", level: 75 },
-        { name: "Java", level: 80 },
-      ],
-    },
-    {
-      title: "Frameworks & Libraries",
-      skills: [
-        { name: "Next.js", level: 95 },
-        { name: "React", level: 92 },
-        { name: "Express", level: 88 },
-        { name: "Node.js", level: 85 },
-        { name: "Flask", level: 78 },
-      ],
-    },
-    {
-      title: "Databases",
-      skills: [
-        { name: "MongoDB", level: 87 },
-        { name: "SQL", level: 82 },
-        { name: "Firebase", level: 90 },
-      ],
-    },
-    {
-      title: "AI & Cloud",
-      skills: [
-        { name: "TensorFlow", level: 80 },
-        { name: "Hugging Face", level: 75 },
-        { name: "OpenCV", level: 82 },
-        { name: "AWS Lambda", level: 85 },
-      ],
-    },
-  ]
+  {
+    title: "Programming Languages",
+    skills: [
+      { name: "C++", level: 85 },
+      { name: "Python", level: 85 },
+      { name: "Java", level: 85 },
+      { name: "Golang", level: 75 },
+      { name: "JavaScript", level: 90 },
+      { name: "TypeScript", level: 85 },
+      { name: "Kotlin", level: 75 },
+    ],
+  },
+  {
+    title: "Frontend & Web",
+    skills: [
+      { name: "React.js", level: 90 },
+      { name: "Next.js", level: 90 },
+      { name: "Angular", level: 80 },
+      { name: "HTML5", level: 95 },
+      { name: "CSS", level: 90 },
+    ],
+  },
+  {
+    title: "Backend & Databases",
+    skills: [
+      { name: "Node.js", level: 90 },
+      { name: "Flask", level: 85 },
+      { name: "MongoDB", level: 85 },
+      { name: "MySQL", level: 80 },
+      { name: "PostgreSQL", level: 80 },
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    skills: [
+      { name: "AWS", level: 85 },
+      { name: "Docker", level: 85 },
+      { name: "Kubernetes", level: 80 },
+      { name: "Jenkins", level: 80 },
+    ],
+  },
+  {
+    title: "Tools & ML",
+    skills: [
+      { name: "GitHub", level: 90 },
+      { name: "Selenium", level: 80 },
+      { name: "TensorFlow", level: 80 },
+      { name: "Copilot", level: 85 },
+    ],
+  },
+]
 
   const containerVariants = {
     hidden: { opacity: 0 },
